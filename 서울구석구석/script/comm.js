@@ -15,6 +15,7 @@ $(function () {
     slideList.css("left", 100 * -now + "%");
   }, 3000);
 
+  //tab
   $(".tab-tit").on("click", function (event) {
     event.preventDefault();
 
@@ -22,6 +23,7 @@ $(function () {
     $(this).parents(".tab").addClass("active");
   });
 
+  //모달
   $(".l-ul li:first-child").on("click", function () {
     $("#modal").css("display", "flex");
   });
