@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  background: #eee;
+}
+/* ------------------------------------- */
+.con {
+  display: flex;
+  flex: 1;
+}
+
+.con1 {
+  width: 200px;
+  height: 100%;
+}
+.lg {
+  margin-top: 10px;
+  text-align: center;
+}
+.nav a {
+  display: block;
+}
+.nav > ul {
+  margin: 20px 10px;
+  border: 1px solid #bbb;
+  position: relative;
+}
+.list-tit {
+  background: #aecaa9;
+  padding: 10px;
+}
+.list-tit:hover {
+  background: #fff;
+}
+.d2 {
+  z-index: 900;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -180px;
+  width: 100%;
+  background: rgba(32, 36, 33, 0.7);
+}
+.d2 > li > a {
+  padding: 10px;
+  width: 100%;
+  display: block;
+  color: #fff;
+}
+.d2 > li > a:hover {
+  background: #fff;
+  color: #000;
+}
+/* ---------------------------------------- */
+.con2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 100%;
+  background: #fff;
+  border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+}
+
+.bnr {
+  padding: 10px;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bbb;
+}
+.bnr > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bnr .img1 {
+  width: 100px;
+}
+.bnr .img2 {
+  object-fit: cover;
+}
+.bnr span:first-child {
+  font-weight: 700;
+}
+
+.tab1 {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tab1 ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tab1 .li-a {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+}
+.tab1 > span {
+  padding: 10px;
+}
+
+.tab2 {
+  padding: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tab2 span {
+  padding: 10px;
+}
+.tab2 > ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.tab2 img {
+  width: 180px;
+  height: 100px;
+  object-fit: cover;
+}
+.tab2 p {
+  width: 180px;
+  text-overflow: clip;
+}
+
+.tabs {
+  height: 70%;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.tab1 > ul {
+  display: none;
+}
+.tab2 > ul {
+  display: none;
+}
+.active ul {
+  width: 95%;
+  display: flex;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+.active .t2-ul {
+  display: flex;
+}
+.tabs .h2 {
+  background: #eee;
+}
+.active .h2 {
+  background: #aecaa9;
+}
+.tab {
+  width: 100%;
+}
+.h2 > a {
+  display: block;
+}
+
+.gr {
+  border-top: 1px solid #bbb;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gr ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+}
+.gr a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gr img {
+  width: 80px;
+}
+/* ------------------------------------------------------ */
+.con3 {
+  overflow: hidden;
+  position: relative;
+  flex: 1;
+  background: antiquewhite;
+}
+.con3 ul {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s;
+}
+.con3 li {
+  width: 100%;
+  height: 100%;
+}
+.con3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* --------------------------------------- */
+.ft {
+  height: 120px;
+  background: #eee;
+  border-top: 1px solid #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ft .lg {
+  filter: grayscale(1);
+}
+.copy ul {
+  display: flex;
+  gap: 5px;
+}
+.copy li {
+  display: flex;
+  gap: 5px;
+}
+.copy ul li a {
+  color: blue;
+}
+.fa {
+  width: 300px;
+  text-align: center;
+}
+.fa ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.fa a {
+  font-weight: 700;
+}
+/* ----------------------------------------- */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0, 0.5);
+}
+.mo-box {
+  width: 400px;
+  height: 200px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+}
+.mo-box span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.mo-box p {
+  margin-top: 10px;
+}
+.mo-box .mo-clo {
+  margin-top: 20px;
+  width: 50px;
+  height: 30px;
+}
